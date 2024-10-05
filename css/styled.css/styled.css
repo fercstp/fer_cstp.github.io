@@ -1,0 +1,47 @@
+header {
+    background-color: #00bbbb;
+}
+main {
+    background-color: #7800e8;
+}
+aside {
+    background-color: rgba(190, 82, 5, 0.5);
+}
+footer {
+    background-color: #510000;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header {
+    grid-area: cabeza;
+}
+main {
+    grid-area: principal;
+}
+aside {
+    grid-area: lado;
+}
+footer {
+    grid-area: pie;
+}
+
+svg {
+    width: 50%;
+}
+h1, p {
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.borde {
+    border-radius: 10px 10px 10px 10px;
+}
